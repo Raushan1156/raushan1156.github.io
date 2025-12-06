@@ -26,39 +26,38 @@ Passionate about building **scalable Java applications**, exploring **Spring Boo
 - Mastering **Spring Boot** & Backend Architecture
 - Building real-world projects to strengthen my tech stack
 
-### 💼 All My Projects
+
+## 📂 My Projects
+
+- **Employee Management System (EMS)** — A clean Spring Boot CRUD API demonstrating DTO mapping, validation, exception handling & layered architecture.
+
+- **WIPAS** *(On-going)* — Advanced HR analytics system featuring complex JPA queries, projections, pagination/sorting & transactional bulk updates.
+
+- **Lovable Clone** *(On-going)* — A modern clone of the Lovable AI platform focusing on authentication, project workflows & scalable backend APIs.
+
 👉 GitHub: **https://github.com/Raushan1156**
 
-### 📫 Reach Me At
-📧 **iamraushankumar56@gmail.com**
-
 ---
-
-## 🌐 Connect With Me
-<p>
-<a href="https://linkedin.com/in/raushan1156" target="_blank">
-  <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" height="30" width="40" />
-</a>
-<a href="https://stackoverflow.com/users/16589374/raushan-kumar" target="_blank">
-  <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/stack-overflow.svg" height="30" width="40" />
-</a>
-<a href="https://www.hackerrank.com/raushan1156" target="_blank">
-  <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerrank.svg" height="30" width="40" />
-</a>
-<a href="https://auth.geeksforgeeks.org/user/raushan1156" target="_blank">
-  <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/geeks-for-geeks.svg" height="30" width="40" />
-</a>
-</p>
-
----
-
-## 🛠️ Languages & Tools
-<p>
-<img src="https://img.shields.io/badge/Java-orange?logo=java&logoColor=white&style=for-the-badge" />
-<img src="https://img.shields.io/badge/Spring%20Boot-6DB33F?logo=springboot&logoColor=white&style=for-the-badge" />
-<img src="https://img.shields.io/badge/MySQL-316192?logo=mysql&logoColor=white&style=for-the-badge" />
-<img src="https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white&style=for-the-badge" />
-<img src="https://img.shields.io/badge/Linux-black?logo=linux&logoColor=white&style=for-the-badge" />
-<img src="https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white&style=for-the-badge" />
-<img src="https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white&style=for-the-badge" />
-</p>
+<div style="display: flex; justify-content: space-between; align-items: flex-start;"> <!-- LEFT SECTION --> 
+  <div style="width: 48%;"> 
+    <h3>🛠️ Languages & Tools</h3> <p> 
+      <img src="https://skillicons.dev/icons?i=java" height="45" /> 
+      <img src="https://skillicons.dev/icons?i=spring" height="45" /> 
+      <img src="https://skillicons.dev/icons?i=mysql" height="45" /> 
+      <img src="https://skillicons.dev/icons?i=git" height="45" /> 
+      <img src="https://skillicons.dev/icons?i=linux" height="45" /> 
+      <img src="https://skillicons.dev/icons?i=html" height="45" /> 
+      <img src="https://skillicons.dev/icons?i=css" height="45" /> 
+    </p> 
+  </div> 
+  
+  <!-- RIGHT SECTION --> 
+  <div style="width: 48%;"> 
+    <h3>🌐 Connect With Me <span style="font-size:14px; font-weight:normal;"> | 📧 iamraushankumar56@gmail.com</span></h3>
+      <a href="https://linkedin.com/in/raushan1156"> <img src="https://skillicons.dev/icons?i=linkedin" height="45" /> </a> 
+      <a href="https://stackoverflow.com/users/16589374/raushan-kumar"> <img src="https://skillicons.dev/icons?i=stackoverflow" height="45" /> </a> 
+      <a href="https://www.hackerrank.com/raushan1156"> <img src="https://cdn.worldvectorlogo.com/logos/hackerrank.svg" height="45" /> 
+      </a> <a href="https://auth.geeksforgeeks.org/user/raushan1156"> <img src="https://img.icons8.com/color/48/000000/GeeksforGeeks.png" height="45" /> </a> 
+    </p> 
+  </div> 
+  </div>
