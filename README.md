@@ -21,7 +21,7 @@ Passionate about building **scalable Java applications**, exploring **Spring Boo
 
 ## 📂 My Projects
 
-- **Employee Management System (EMS)** — A clean Spring Boot CRUD API demonstrating DTO mapping, validation, exception handling & layered architecture.
+- **Employee Management System (EMS)** — A clean Spring Boot CRUD API demonstrating DTO mapping, validation, exception handling & layered architecture, and Spring Security.
 
 - **WIPAS** *(On-going)* — Advanced HR analytics system featuring complex JPA queries, projections, pagination/sorting & transactional bulk updates.
 
