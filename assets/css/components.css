@@ -254,3 +254,19 @@
   font-size: 0.85rem;
   color: #6b7280;
 }
+
+/* Resume Download */
+.resume-link {
+  padding: 6px 12px;
+  border: 1px solid #2563eb;
+  border-radius: 6px;
+  color: #2563eb;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.resume-link:hover {
+  background-color: #2563eb;
+  color: #ffffff;
+  text-decoration: none;
+}
