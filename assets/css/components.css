@@ -72,12 +72,13 @@
 .project-extra {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.3s ease;
+  transition: max-height 0.35s ease;
 }
 
-.project-card.expanded .project-extra {
-  max-height: 500px;
+.expandable.expanded .project-extra {
+  max-height: 1000px; /* large enough, but safe */
 }
+
 
 .read-more-btn {
   margin-top: 10px;

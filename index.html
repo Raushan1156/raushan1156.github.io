@@ -78,7 +78,7 @@
     <h2>Experience</h2>
 
     <div class="experience">
-      <div class="exp-card">
+      <div class="exp-card expandable">
         <h3>
           Associate Software Engineer –
           <a href="https://www.finastra.com" target="_blank">Finastra</a>
@@ -88,16 +88,110 @@
           Aug 2023 – Present · Bangalore, India <br/>
           Company URL: https://www.finastra.com
         </div>
-
+        <div class="project-extra">
         <ul>
           <li>Developing Spring Boot backend services in enterprise financial systems.</li>
           <li>Building REST APIs using layered architecture and clean code practices.</li>
           <li>Automated onboarding and governance using <strong>GitHub Actions</strong>, reducing manual effort by ~40–50%.</li>
           <li>Actively serving as GitHub Admin handling repo migrations and CI/CD workflows.</li>
         </ul>
+
+          <div class="tech">
+            <strong>Tech:</strong>
+            Java, Spring Boot, REST APIs, Python, GitHub Action, Jira
+          </div>
+      </div>
+        <button class="read-more-btn">Read more</button>
       </div>
     </div>
   </section>
+
+  <!-- Java Developer – English Helper -->
+  <div class="exp-card expandable">
+    <h3>
+      Java Developer –
+      <a href="#" target="_blank">English Helper</a>
+    </h3>
+
+    <div class="exp-meta">
+      Mar 2023 – Apr 2023 · Remote / India
+    </div>
+
+    <div class="project-extra">
+    <ul>
+      <li>
+        Worked as a Java Developer focusing on backend logic and
+        REST API development.
+      </li>
+      <li>
+        Built and enhanced backend components using
+        <strong>Java</strong> and <strong>Spring Boot</strong>.
+      </li>
+      <li>
+        Developed REST APIs to interact with external services,
+        including retrieving objects from <strong>AWS S3</strong>.
+      </li>
+      <li>
+        Implemented core Java concepts such as
+        collections, exception handling, and file handling.
+      </li>
+      <li>
+        Gained early exposure to cloud integration and backend service design.
+      </li>
+    </ul>
+
+    <div class="tech">
+      <strong>Tech:</strong>
+      Java, Spring Boot, REST APIs, AWS (S3), MySQL
+    </div>
+  </div>
+  <button class="read-more-btn">Read more</button>
+  </div>
+
+
+  <!-- SDET Intern – Sartorius -->
+  <div class="exp-card expandable">
+    <h3>
+      SDET Intern –
+      <a href="https://www.sartorius.com" target="_blank">Sartorius</a>
+    </h3>
+
+    <div class="exp-meta">
+      Aug 2022 – Jan 2023 · Bangalore, India <br />
+      Company URL: https://www.sartorius.com
+    </div>
+    <div class="project-extra">
+    <ul>
+      <li>
+        Worked as an SDET Intern contributing to test automation and
+        quality assurance for enterprise software systems.
+      </li>
+      <li>
+        Developed and maintained automated test cases using
+        <strong>C#</strong> and <strong>Ranorex</strong>.
+      </li>
+      <li>
+        Used <strong>Polarion</strong> for test management, defect tracking,
+        and requirement traceability.
+      </li>
+      <li>
+        Collaborated with developers and QA engineers to identify, debug,
+        and resolve defects early in the development lifecycle.
+      </li>
+      <li>
+        Gained hands-on experience with <strong>Git</strong> and
+        <strong>Azure-based</strong> workflows in an enterprise environment.
+      </li>
+    </ul>
+
+    <div class="tech">
+      <strong>Tech:</strong>
+      C#, Ranorex, Polarion, Git, Azure
+    </div>
+  </div>
+  <button class="read-more-btn">Read more</button>
+  </div>
+
 
   <!-- ================= SKILL MODULE ================= -->
 
@@ -161,7 +255,16 @@
     <div class="edu-card">
       <h3>Higher Secondary Education</h3>
       <p>
-        Result: 85% <br/>
+        Jawahar Navodaya Vidyalaya <br/>
+        <strong>Result:</strong> 85% <br/>
+        April 2017 – April 2019
+      </p>
+    </div>
+
+    <div class="edu-card">
+      <h3>Secondary Education</h3>
+      <p>
+        Jawahar Navodaya Vidyalaya<br/>
         April 2017 – April 2019
       </p>
     </div>
@@ -171,30 +274,95 @@
   <section id="projects" class="section">
     <h2>Projects</h2>
 
-    <div class="project-card">
-
+<!--    Hospital Management System-->
+    <div class="project-card expandable">
       <h3>🏥 Hospital Management System</h3>
-
       <p>
         Spring Boot backend for managing patients, doctors, and appointments.
       </p>
-
       <div class="project-extra">
-        <ul>
-          <li>JWT-based authentication & RBAC</li>
-          <li>Transaction management</li>
-          <li>Dockerized PostgreSQL</li>
-          <li>Swagger (SpringDoc)</li>
+
+        <h4>Key Features</h4>
+        <ul class="feature-list">
+          <li>JWT-based authentication and authorization</li>
+          <li>Role-Based Access Control (RBAC)</li>
+          <li>Secure RESTful APIs</li>
+          <li>Patient and Doctor management</li>
+          <li>Transaction management with rollback handling</li>
+          <li>Centralized global exception handling</li>
+          <li>Clean layered architecture</li>
         </ul>
 
         <div class="tech">
-          Tech: Java, Spring Boot, Spring Security, JWT, JPA, PostgreSQL
+          <strong>Tech:</strong>
+          Java, Spring Boot, Spring Security, JWT, Spring Data JPA,
+          Hibernate, PostgreSQL
+        </div>
+
+        <div class="project-links">
+          <a href="https://github.com/Raushan1156/Hospital-Management"
+             target="_blank">
+            🔗 GitHub Repository
+          </a>
         </div>
       </div>
 
       <button class="read-more-btn">Read more</button>
-
     </div>
+
+<!--    Employee Management System-->
+    <div class="project-card expandable">
+      <h3>👥 Employee Management System</h3>
+
+      <p>
+        Spring Boot REST API for managing employee records using a clean,
+        layered backend architecture.
+      </p>
+      <div class="project-extra">
+        <h4>Key Features</h4>
+        <ul class="feature-list">
+          <li>Create, update, fetch, and delete employee records</li>
+          <li>DTO ↔ Entity mapping using <strong>ModelMapper</strong></li>
+          <li>Input validation using <strong>Jakarta Validation</strong></li>
+          <li>Centralized global exception handling</li>
+          <li>Standardized API response structure</li>
+          <li>JPA-based repository operations</li>
+          <li>PATCH support using <strong>ReflectionUtils</strong> for partial updates</li>
+          <li>Multi-database support (H2 for development, MySQL for persistence)</li>
+        </ul>
+        <div class="tech">
+          Tech: Java, Spring Boot, Spring MVC, Spring Data JPA, Hibernate,
+          Validation, H2/MySQL
+        </div>
+
+        <div class="project-links">
+          <a href="https://github.com/Raushan1156/Employee-Management"
+            target="_blank">
+            🔗 GitHub Repository
+          </a>
+        </div>
+      </div>
+      <button class="read-more-btn">Read more</button>
+    </div>
+
+    <!--VTU Marks Calculator  -->
+    <div class="project-card">
+      <h3>📘 VTU Marks Calculator</h3>
+      <p>
+        Core Java application for calculating and analyzing university results,
+        focusing on Java fundamentals and business logic implementation.
+      </p>
+      <div class="tech">
+        Tech: Java (Core), OOPs, Collections, File Handling, MySQL
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/Raushan1156/Calculator-app"
+           target="_blank">
+          🔗 GitHub Repository
+        </a>
+      </div>
+    </div>
+
 
   </section>
   <!-- ================= ACHIEVEMENT MODULE ================= -->
