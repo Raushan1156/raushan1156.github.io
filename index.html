@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css" />
+  <script src="assets/js/typing.js"></script>
   <title>Raushan Kumar | Java Backend Developer</title>
 </head>
 <body>
@@ -191,43 +192,6 @@
   <p>© 2026 Raushan Kumar · Java Backend Developer</p>
 </div>
 </div>
-
-<script>
-  const texts = [
-    "Java Backend Developer",
-    "Spring Boot Engineer",
-    "Building Scalable Backend Systems"
-  ];
-
-  let index = 0;
-  let charIndex = 0;
-  const speed = 80;
-  const delayBetweenTexts = 1500;
-  const element = document.getElementById("typing-text");
-
-  function type() {
-    if (charIndex < texts[index].length) {
-      element.textContent += texts[index].charAt(charIndex);
-      charIndex++;
-      setTimeout(type, speed);
-    } else {
-      setTimeout(erase, delayBetweenTexts);
-    }
-  }
-
-  function erase() {
-    if (charIndex > 0) {
-      element.textContent = texts[index].substring(0, charIndex - 1);
-      charIndex--;
-      setTimeout(erase, speed / 2);
-    } else {
-      index = (index + 1) % texts.length;
-      setTimeout(type, speed);
-    }
-  }
-
-  type();
-</script>
 
   
 </body>
