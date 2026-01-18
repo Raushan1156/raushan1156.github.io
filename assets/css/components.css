@@ -160,3 +160,70 @@
   font-size: 0.85rem;
   color: #6b7280;
 }
+
+/* Architecture */
+.arch-desc {
+  font-size: 0.95rem;
+  color: #4b5563;
+  max-width: 700px;
+}
+
+.architecture-flow {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 30px 24px;
+  margin-top: 24px;
+  max-width: 650px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+}
+
+.arch-block {
+  text-align: left;
+}
+
+.arch-block h4 {
+  margin: 0 0 6px 0;
+  font-size: 1rem;
+  color: #111827;
+}
+
+.arch-block p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+.arch-block ul {
+  margin: 0;
+  padding-left: 18px;
+  font-size: 0.9rem;
+  color: #4b5563;
+}
+
+.arch-arrow {
+  text-align: center;
+  font-size: 1.3rem;
+  color: #9ca3af;
+  margin: 10px 0;
+}
+
+.badge {
+  display: inline-block;
+  background: #eef2ff;
+  color: #3730a3;
+  font-size: 0.7rem;
+  padding: 3px 8px;
+  border-radius: 999px;
+  margin-left: 6px;
+}
+
+/* copyright centered ONLY */
+.footer-bottom {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.copyright {
+  font-size: 0.85rem;
+  color: #6b7280;
+}

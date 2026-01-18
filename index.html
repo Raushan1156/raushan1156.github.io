@@ -214,15 +214,73 @@
   <!-- ================= ARCHITECTURE MODULE ================= -->
   <section id="architecture" class="section">
     <h2>Architecture Snapshot</h2>
-    <p>
-      Typical request flow used across my Spring Boot projects,
-      emphasizing separation of concerns and clean layering.
+
+    <p class="arch-desc">
+      Common request flow used across my Spring Boot projects,
+      highlighting security, clean layering, and separation of concerns.
     </p>
 
-    <img src="assets/images/architecture.png"
-         alt="Spring Boot Architecture"
-         style="width:100%; max-width:700px; border-radius:10px;" />
+    <div class="architecture-flow">
+
+      <div class="arch-block">
+        <h4>Client</h4>
+        <p>Web / Mobile / API Client</p>
+      </div>
+
+      <div class="arch-arrow">↓</div>
+
+      <div class="arch-block">
+        <h4>Spring Security Filter Chain</h4>
+        <ul>
+          <li>JWT Token Extraction</li>
+          <li>Authentication</li>
+          <li>Security Context Population</li>
+        </ul>
+      </div>
+
+      <div class="arch-arrow">↓</div>
+
+      <div class="arch-block">
+        <h4>Controller <span class="badge">@RestController</span></h4>
+        <ul>
+          <li>Request Mapping</li>
+          <li>Validation</li>
+          <li>DTO ↔ Entity Mapping</li>
+        </ul>
+      </div>
+
+      <div class="arch-arrow">↓</div>
+
+      <div class="arch-block">
+        <h4>Service <span class="badge">@Service</span> <span class="badge">@Transactional</span></h4>
+        <ul>
+          <li>Business Logic</li>
+          <li>Authorization Rules</li>
+          <li>Transaction Management</li>
+        </ul>
+      </div>
+
+      <div class="arch-arrow">↓</div>
+
+      <div class="arch-block">
+        <h4>Repository <span class="badge">@Repository</span></h4>
+        <ul>
+          <li>JPA / Hibernate</li>
+          <li>Query Abstractions</li>
+        </ul>
+      </div>
+
+      <div class="arch-arrow">↓</div>
+
+      <div class="arch-block">
+        <h4>Database</h4>
+        <p>PostgreSQL / MySQL</p>
+      </div>
+
+    </div>
   </section>
+
+
 
   <!-- ================= ACTIVITY MODULE ================= -->
   <section id="activity" class="section">
