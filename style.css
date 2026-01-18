@@ -133,3 +133,24 @@ a:hover {
   font-size: 0.9rem;
 }
 
+.experience {
+  display: grid;
+  gap: 20px;
+}
+
+.exp-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+}
+
+.exp-card h3 {
+  margin: 0;
+}
+
+.exp-meta {
+  font-size: 0.9rem;
+  color: #6b7280;
+  margin-bottom: 10px;
+}
