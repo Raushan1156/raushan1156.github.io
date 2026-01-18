@@ -131,7 +131,7 @@
 
 .contact-item {
   display: flex;
-  align-items: left;          /* correct */
+  align-items: center;          /* correct */
   gap: 10px;                    /* slightly better spacing */
   font-size: 0.95rem;
   margin-bottom: 12px;
