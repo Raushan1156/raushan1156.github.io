@@ -102,3 +102,34 @@ a:hover {
   margin-right: 12px;
   font-size: 0.9rem;
 }
+
+.certifications {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.cert-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+}
+
+.cert-card h3 {
+  margin: 0 0 6px 0;
+  font-size: 1.05rem;
+}
+
+.cert-card p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #4b5563;
+}
+
+.cert-card a {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
