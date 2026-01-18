@@ -68,3 +68,23 @@
 @keyframes blink {
   50% { opacity: 0; }
 }
+
+.project-extra {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.project-card.expanded .project-extra {
+  max-height: 500px;
+}
+
+.read-more-btn {
+  margin-top: 10px;
+  background: none;
+  border: none;
+  color: #2563eb;
+  font-size: 0.9rem;
+  cursor: pointer;
+  padding: 0;
+}

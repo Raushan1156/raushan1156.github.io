@@ -8,10 +8,23 @@
   <link rel="stylesheet" href="assets/css/base.css" />
   <link rel="stylesheet" href="assets/css/layout.css" />
   <link rel="stylesheet" href="assets/css/components.css" />
+  <a href="#activity">Activity</a>
+  <script src="assets/js/projects.js"></script>
 
   <title>Raushan Kumar | Java Backend Developer</title>
 </head>
 <body>
+
+<!-- ================= NAVIGATION MODULE ================= -->
+<div class="nav-dropdown">
+  <span class="dropdown-trigger">Activity ▾</span>
+  <div class="dropdown-menu">
+    <a href="https://linkedin.com/in/raushan1156" target="_blank">LinkedIn</a>
+    <a href="https://github.com/Raushan1156" target="_blank">GitHub</a>
+    <a href="https://auth.geeksforgeeks.org/user/raushan1156" target="_blank">GeeksforGeeks</a>
+    <a href="https://medium.com/@raushan1156" target="_blank">Medium</a>
+  </div>
+</div>
 
 <!-- ================= HEADER MODULE ================= -->
 <header class="site-header">
@@ -90,63 +103,31 @@
   <section id="projects" class="section">
     <h2>Projects</h2>
 
-    <div class="projects">
+    <div class="project-card">
 
-      <div class="project-card">
-        <h3>🏥 Hospital Management System</h3>
-        <p>
-          Spring Boot backend for managing patients, doctors, and appointments
-          with production-style architecture.
-        </p>
+      <h3>🏥 Hospital Management System</h3>
 
+      <p>
+        Spring Boot backend for managing patients, doctors, and appointments.
+      </p>
+
+      <div class="project-extra">
         <ul>
-          <li>JWT-based authentication & role-based access</li>
-          <li>Centralized exception handling & transactions</li>
-          <li>Dockerized PostgreSQL integration</li>
-          <li>Swagger (SpringDoc) API documentation</li>
+          <li>JWT-based authentication & RBAC</li>
+          <li>Transaction management</li>
+          <li>Dockerized PostgreSQL</li>
+          <li>Swagger (SpringDoc)</li>
         </ul>
 
         <div class="tech">
           Tech: Java, Spring Boot, Spring Security, JWT, JPA, PostgreSQL
         </div>
-
-        <div class="project-links">
-          🔗 GitHub Repo:<br />
-          <a href="https://github.com/Raushan1156/Hospital-Management" target="_blank">
-            https://github.com/Raushan1156/Hospital-Management
-          </a>
-        </div>
       </div>
 
-      <div class="project-card">
-        <h3>👥 Employee Management System</h3>
-        <p>
-          CRUD-based REST API demonstrating DTO mapping, validation,
-          and structured backend design.
-        </p>
-
-        <div class="tech">
-          Tech: Java, Spring Boot, JPA, Spring Security, H2/MySQL
-        </div>
-
-        <div class="project-links">
-          <a href="https://github.com/Raushan1156" target="_blank">GitHub</a>
-        </div>
-      </div>
-
-      <div class="project-card">
-        <h3>📊 WIPAS (In Progress)</h3>
-        <p>
-          HR analytics system focusing on complex JPA queries,
-          projections, pagination, and transactional bulk updates.
-        </p>
-
-        <div class="tech">
-          Tech: Java, Spring Boot, Advanced JPA
-        </div>
-      </div>
+      <button class="read-more-btn">Read more</button>
 
     </div>
+
   </section>
 
   <!-- ================= ARCHITECTURE MODULE ================= -->
