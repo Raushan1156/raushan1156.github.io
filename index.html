@@ -3,234 +3,190 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <script src="assets/js/typing.js"></script>
+
+  <!-- Modular CSS -->
+  <link rel="stylesheet" href="assets/css/base.css" />
+  <link rel="stylesheet" href="assets/css/layout.css" />
+  <link rel="stylesheet" href="assets/css/components.css" />
+
   <title>Raushan Kumar | Java Backend Developer</title>
 </head>
 <body>
+
+<!-- ================= HEADER MODULE ================= -->
+<header class="site-header">
+  <nav class="nav">
+    <span class="brand">Raushan Kumar</span>
+    <div class="nav-right">
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#activity">Activity</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+</header>
+
 <div class="container">
 
-  <!-- your existing content here -->
+  <!-- ================= HERO MODULE ================= -->
+  <section id="hero" class="hero">
+    <p class="typing-line">
+      <strong><span id="typing-text"></span></strong>
+    </p>
 
-<div class="hero">
+    <h1>Hi 👋, I'm Raushan Kumar</h1>
+    <h3>🚀 Backend Java Developer from India</h3>
+    <p><strong>Experience:</strong> 2.6+ YOE</p>
 
-  <p class="typing-line">
-    <strong><span id="typing-text"></span></strong>
-  </p>
+    <p>
+      Java Backend Developer with <strong>2.6+ years of experience</strong>
+      building and maintaining <strong>Spring Boot–based backend systems</strong>
+      in enterprise environments.
+    </p>
 
-  <!-- <p class="profile-views">
-    👁 Profile Views:
-    <span id="view-count">1014</span>
-  </p> -->
+    <p>
+      Currently working at
+      <a href="https://www.finastra.com" target="_blank">Finastra</a>,
+      contributing to backend services and internal automation tools
+      that improve developer onboarding, access control, and CI/CD workflows.
+    </p>
 
-  <h1>Hi 👋, I'm Raushan Kumar</h1>
-  <h3>🚀 Backend Java Developer from India</h3>
-  <p><strong>Experience:</strong> 2.6+ YOE</p>
-</div>
+    <p>
+      📍 Bangalore, India <br/>
+      📧 Email: <strong>iamraushankumar56@gmail.com</strong>
+    </p>
+  </section>
 
-<!-- <p>
-  Currently working as an <strong>Associate Software Engineer</strong> at
-  <a href="https://www.finastra.com" target="_blank">Finastra</a>
-  (Global Financial Software Company).
-</p> -->
-<p>
-  Java Backend Developer with <strong>2.6+ years of experience</strong>
-  building and maintaining <strong>Spring Boot–based backend systems</strong>
-  in enterprise environments.
-</p>
+  <!-- ================= EXPERIENCE MODULE ================= -->
+  <section id="experience" class="section">
+    <h2>Experience</h2>
 
-<p>
-  Currently working at
-  <a href="https://www.finastra.com" target="_blank">Finastra</a>,
-  contributing to backend services and internal automation tools
-  that improve developer onboarding, access control, and CI/CD workflows.
-</p>
+    <div class="experience">
+      <div class="exp-card">
+        <h3>
+          Associate Software Engineer –
+          <a href="https://www.finastra.com" target="_blank">Finastra</a>
+        </h3>
 
+        <div class="exp-meta">
+          Aug 2023 – Present · Bangalore, India <br/>
+          Company URL: https://www.finastra.com
+        </div>
 
-<p>
-  📍 Bangalore, India <br/>
-  📧 Email: <strong>iamraushankumar56@gmail.com</strong>
-</p>
-
-
-  <div class="section">
-  <h2>Experience</h2>
-
-  <div class="experience">
-
-    <div class="exp-card">
-  <h3>
-    Associate Software Engineer –
-    <a href="https://www.finastra.com" target="_blank">Finastra</a>
-  </h3>
-
-  <div class="exp-meta">
-    Aug 2023 – Present · Bangalore, India <br/>
-    Company URL: https://www.finastra.com
-  </div>
-
-  <ul>
-  <li>
-    Developing and maintaining Spring Boot backend services
-    used across internal platforms in a large-scale financial software environment.
-  </li>
-  <li>
-    Built REST APIs with Spring Boot, Spring MVC, and Spring Data JPA,
-    following layered architecture and clean code practices.
-  </li>
-  <li>
-    Automated onboarding, access control, and repository governance
-    using <strong>GitHub Actions</strong>, reducing manual effort by ~40–50%.
-  </li>
-  <li>
-    Actively serving as a GitHub Admin, handling repository migrations,
-    permission models, and CI/CD automation workflows.
-  </li>
-</ul>
-
-</div>
-
-
-  </div>
-</div>
-
-
-  <div class="section">
-  <h2>Projects</h2>
-
-  <div class="projects">
-
-    <div class="project-card">
-  <h3>🏥 Hospital Management System</h3>
-
-  <p>
-    Backend application for managing doctors, patients, and appointments,
-    built using Spring Boot and JWT-based security.
-  </p>
-  <p>
-  Designed and implemented a Spring Boot backend system
-  for managing patients, doctors, and appointments,
-  focusing on <strong>real-world backend engineering practices</strong>.
-</p>
-      
-  <div class="tech">
-  <ul>
-  <li>JWT-based authentication and role-based access control</li>
-  <li>Transaction management and centralized exception handling</li>
-  <li>Dockerized PostgreSQL integration</li>
-  <li>Swagger (SpringDoc) for API documentation</li>
-  </ul>
-  Tech: Java, Spring Boot, Spring Security, JWT, JPA, PostgreSQL
-  </div>
-
-  <div class="project-links">
-  🔗 GitHub Repo:<br />
-  <a href="https://github.com/Raushan1156/Hospital-Management" target="_blank">
-    https://github.com/Raushan1156/Hospital-Management
-  </a>
-</div>
-
-</div>
-
-
-    <div class="project-card">
-      <h3>👥 Employee Management System</h3>
-      <p>
-        CRUD-based REST API demonstrating DTO mapping, validation,
-        exception handling, and structured backend design.
-      </p>
-      <div class="tech">
-        Tech: Java, Spring Boot, JPA, Spring Security, H2/MySQL
-      </div>
-      <div class="project-links">
-        <a href="https://github.com/Raushan1156" target="_blank">GitHub</a>
+        <ul>
+          <li>Developing Spring Boot backend services in enterprise financial systems.</li>
+          <li>Building REST APIs using layered architecture and clean code practices.</li>
+          <li>Automated onboarding and governance using <strong>GitHub Actions</strong>, reducing manual effort by ~40–50%.</li>
+          <li>Actively serving as GitHub Admin handling repo migrations and CI/CD workflows.</li>
+        </ul>
       </div>
     </div>
+  </section>
 
-    <div class="project-card">
-      <h3>📊 WIPAS (In Progress)</h3>
-      <p>
-        HR analytics system focusing on complex JPA queries, projections,
-        pagination, sorting, and transactional bulk updates.
-      </p>
-      <div class="tech">
-        Tech: Java, Spring Boot, Advanced JPA
+  <!-- ================= PROJECTS MODULE ================= -->
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+
+    <div class="projects">
+
+      <div class="project-card">
+        <h3>🏥 Hospital Management System</h3>
+        <p>
+          Spring Boot backend for managing patients, doctors, and appointments
+          with production-style architecture.
+        </p>
+
+        <ul>
+          <li>JWT-based authentication & role-based access</li>
+          <li>Centralized exception handling & transactions</li>
+          <li>Dockerized PostgreSQL integration</li>
+          <li>Swagger (SpringDoc) API documentation</li>
+        </ul>
+
+        <div class="tech">
+          Tech: Java, Spring Boot, Spring Security, JWT, JPA, PostgreSQL
+        </div>
+
+        <div class="project-links">
+          🔗 GitHub Repo:<br />
+          <a href="https://github.com/Raushan1156/Hospital-Management" target="_blank">
+            https://github.com/Raushan1156/Hospital-Management
+          </a>
+        </div>
       </div>
-      <div class="project-links">
-        <span>Work in progress</span>
+
+      <div class="project-card">
+        <h3>👥 Employee Management System</h3>
+        <p>
+          CRUD-based REST API demonstrating DTO mapping, validation,
+          and structured backend design.
+        </p>
+
+        <div class="tech">
+          Tech: Java, Spring Boot, JPA, Spring Security, H2/MySQL
+        </div>
+
+        <div class="project-links">
+          <a href="https://github.com/Raushan1156" target="_blank">GitHub</a>
+        </div>
       </div>
+
+      <div class="project-card">
+        <h3>📊 WIPAS (In Progress)</h3>
+        <p>
+          HR analytics system focusing on complex JPA queries,
+          projections, pagination, and transactional bulk updates.
+        </p>
+
+        <div class="tech">
+          Tech: Java, Spring Boot, Advanced JPA
+        </div>
+      </div>
+
     </div>
+  </section>
 
-  </div>
+  <!-- ================= ARCHITECTURE MODULE ================= -->
+  <section id="architecture" class="section">
+    <h2>Architecture Snapshot</h2>
+    <p>
+      Typical request flow used across my Spring Boot projects,
+      emphasizing separation of concerns and clean layering.
+    </p>
+
+    <img src="assets/images/architecture.png"
+         alt="Spring Boot Architecture"
+         style="width:100%; max-width:700px; border-radius:10px;" />
+  </section>
+
+  <!-- ================= ACTIVITY MODULE ================= -->
+  <section id="activity" class="section">
+    <h2>Community & Activity</h2>
+    <ul>
+      <li>Oracle Java Certified</li>
+      <li>HackerRank – Java & SQL Certified</li>
+      <li>4★ Java on HackerRank</li>
+      <li>1400+ rating on LeetCode</li>
+      <li>2nd rank on GeeksforGeeks (institution-wise)</li>
+      <li>Author of Spring Boot articles on Medium (1,000+ developers reached)</li>
+    </ul>
+  </section>
+
+  <!-- ================= CONTACT MODULE ================= -->
+  <section id="contact" class="section footer">
+    <p>
+      📧 <strong>iamraushankumar56@gmail.com</strong><br />
+      🔗 <a href="https://github.com/Raushan1156" target="_blank">GitHub</a> |
+      <a href="https://linkedin.com/in/raushan1156" target="_blank">LinkedIn</a>
+    </p>
+
+    <p>© 2026 Raushan Kumar · Java Backend Developer</p>
+  </section>
+
 </div>
 
-  <div class="section">
-  <h2>Architecture Snapshot</h2>
-  <p>
-    Typical request flow used across my Spring Boot projects,
-    focusing on separation of concerns and clean layering.
-  </p>
-  <img src="assets/architecture.png"
-       alt="Spring Boot Architecture"
-       style="width:100%; max-width:700px; border-radius:10px;" />
-</div>
+<!-- ================= JS MODULES ================= -->
+<script src="assets/js/typing.js"></script>
 
-  <div class="section">
-  <h2>Certifications</h2>
-
-  <div class="certifications">
-
-    <div class="cert-card">
-  <h3>Java Certification</h3>
-  <p>Issuer: Oracle</p>
-  <p>
-    Verification URL:
-    <a href="https://example-oracle-link"
-       target="_blank">
-       https://example-oracle-link
-    </a>
-  </p>
-</div>
-
-
-    <div class="cert-card">
-      <h3>Java (Basic)</h3>
-      <p>HackerRank</p>
-      <a href="#" target="_blank">View Certificate</a>
-    </div>
-
-    <div class="cert-card">
-      <h3>SQL Certification</h3>
-      <p>HackerRank</p>
-      <a href="#" target="_blank">View Certificate</a>
-    </div>
-
-  </div>
-</div>
-<div class="section">
-  <h2>Community & Certifications</h2>
-  <ul>
-    <li>Oracle Java Certified</li>
-    <li>HackerRank – Java & SQL Certified</li>
-    <li>4★ Java on HackerRank</li>
-    <li>1400+ rating on LeetCode</li>
-    <li>2nd rank on GeeksforGeeks (institution-wise)</li>
-    <li>Author of Spring Boot articles on Medium (1,000+ developers reached)</li>
-  </ul>
-</div>
-
-  
-  
-  <div class="section footer">
-  <p>
-    📧 <strong>iamraushankumar56@gmail.com</strong><br />
-    🔗 <a href="https://github.com/Raushan1156" target="_blank">GitHub</a> |
-    <a href="https://linkedin.com/in/raushan1156" target="_blank">LinkedIn</a>
-  </p>
-  <p>© 2026 Raushan Kumar · Java Backend Developer</p>
-</div>
-</div>
-
-  
 </body>
 </html>
