@@ -123,3 +123,40 @@
   margin-top: 16px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
+
+/* CONTACT */
+.contact-list {
+  margin-top: 20px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+  color: #374151;
+}
+
+.contact-label {
+  font-weight: 500;
+  color: #111827;
+}
+
+.contact-item a {
+  word-break: break-all;
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  text-align: left; /* IMPORTANT: left aligned */
+}
+
+.copyright {
+  margin-top: 20px;
+  font-size: 0.85rem;
+  color: #6b7280;
+}
