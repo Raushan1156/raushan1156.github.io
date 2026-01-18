@@ -102,6 +102,12 @@ a:hover {
   margin-right: 12px;
   font-size: 0.9rem;
 }
+.project-links a {
+  word-break: break-all;
+  overflow-wrap: anywhere;
+  display: inline-block;
+  max-width: 100%;
+}
 
 .certifications {
   display: grid;
