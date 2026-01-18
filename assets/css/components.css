@@ -131,12 +131,14 @@
 
 .contact-item {
   display: flex;
-  align-items: center;          /* correct */
-  gap: 10px;                    /* slightly better spacing */
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
   font-size: 0.95rem;
-  margin-bottom: 12px;
-  color: #111827;               /* FORCE black (fixes your issue) */
+  line-height: 1.4;
+  color: #111827;
 }
+
 
 .contact-label {
   font-weight: 500;
@@ -158,6 +160,13 @@
   line-height: 1.4;
 }
 
+.contact-text strong {
+  font-weight: 600;
+  font-size: 0.95rem;      /* SAME as parent */
+  line-height: 1.4;        /* FORCE SAME LINE HEIGHT */
+}
+
+
 /* social icon in contact */
 .social-icon {
   width: 16px;
@@ -167,8 +176,8 @@
 }
 
 .icon-wrapper {
-  width: 18px;
-  height: 18px;
+  width: 20px;
+  height: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
