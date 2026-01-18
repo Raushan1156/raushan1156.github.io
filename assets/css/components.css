@@ -151,16 +151,30 @@
   text-decoration: underline;
 }
 
+.contact-text {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  line-height: 1.4;
+}
+
 /* social icon in contact */
 .social-icon {
   width: 16px;
   height: 16px;
-  min-width: 16px;
-  min-height: 16px;
-  object-fit: contain;      /* IMPORTANT */
-  display: inline-block;
+  object-fit: contain;
+  display: block;
+}
+
+.icon-wrapper {
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex-shrink: 0;
 }
+
 
 /* Architecture */
 .arch-desc {
