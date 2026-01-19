@@ -1,5 +1,5 @@
 const texts = [
-  "Backend Java Developer",
+  "Java Developer",
   "Spring Boot Enthusiast",
   "Continuous Learner"
 ];
