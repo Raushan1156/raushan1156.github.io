@@ -1,24 +1,31 @@
-/* Cards */
+/* ===== CARDS BASE ===== */
 .project-card,
 .cert-card,
 .exp-card {
   background: #ffffff;
-  border-radius: 12px;
-  padding: 20px;
-  box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+  border-radius: 14px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  border: 1px solid #f1f5f9;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* Projects */
+/* ===== PROJECTS ===== */
 .projects {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 20px;
 }
 
-.project-card:hover {
+.project-card:hover,
+.exp-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 10px 24px rgba(0,0,0,0.08);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.09);
+}
+
+.project-card h3 {
+  font-size: 1.05rem;
+  margin-bottom: 6px;
 }
 
 .project-links a {
@@ -28,31 +35,34 @@
   max-width: 100%;
 }
 
-/* Experience */
+/* ===== EXPERIENCE ===== */
 .experience {
   display: grid;
   gap: 20px;
 }
 
 .exp-meta {
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   color: #6b7280;
   margin-bottom: 10px;
 }
 
-.exp-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 10px 24px rgba(0,0,0,0.08);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-/* Certifications */
-.certifications {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 20px;
+/* ===== TECH TAGS ===== */
+.tech {
+  margin-top: 14px;
+  font-size: 0.85rem;
+  color: #4b5563;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
 }
 
-/* Typing */
+.tech strong {
+  color: #111827;
+  margin-right: 4px;
+}
+
+/* ===== TYPING EFFECT ===== */
 .typing-line {
   font-size: 1.4rem;
   color: #6a5acd;
@@ -66,7 +76,7 @@
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(8px); }
+  from { opacity: 0; transform: translateY(10px); }
   to   { opacity: 1; transform: translateY(0); }
 }
 
@@ -74,6 +84,7 @@
   50% { opacity: 0; }
 }
 
+/* ===== EXPAND/COLLAPSE ===== */
 .project-extra {
   max-height: 0;
   overflow: hidden;
@@ -81,56 +92,67 @@
 }
 
 .expandable.expanded .project-extra {
-  max-height: 1000px; /* large enough, but safe */
+  max-height: 1000px;
 }
 
-
 .read-more-btn {
-  margin-top: 10px;
+  margin-top: 12px;
   background: none;
   border: none;
   color: #2563eb;
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   cursor: pointer;
   padding: 0;
+  font-weight: 500;
 }
 
- /* SKILL COMPONENT */
+.read-more-btn:hover {
+  text-decoration: underline;
+}
+
+/* ===== SKILLS ===== */
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 20px;
+  gap: 16px;
 }
 
 .skill-group {
   background: #ffffff;
   border-radius: 10px;
-  padding: 16px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  padding: 18px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  border: 1px solid #f1f5f9;
+  border-left: 3px solid #2563eb;
 }
 
 .skill-group h4 {
   margin: 0 0 6px 0;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   color: #111827;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
 }
 
 .skill-group p {
   margin: 0;
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   color: #4b5563;
 }
 
-/* EDUCATION */
+/* ===== EDUCATION ===== */
 .edu-card {
   background: #ffffff;
   border-radius: 10px;
-  padding: 18px;
+  padding: 20px;
   margin-top: 16px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  border: 1px solid #f1f5f9;
+  border-left: 3px solid #2563eb;
 }
 
-/* CONTACT */
+/* ===== CONTACT ===== */
 .contact-list {
   margin-top: 20px;
 }
@@ -144,7 +166,6 @@
   line-height: 1.4;
   color: #111827;
 }
-
 
 .contact-label {
   font-weight: 500;
@@ -168,12 +189,10 @@
 
 .contact-text strong {
   font-weight: 600;
-  font-size: 0.95rem;      /* SAME as parent */
-  line-height: 1.4;        /* FORCE SAME LINE HEIGHT */
+  font-size: 0.95rem;
+  line-height: 1.4;
 }
 
-
-/* social icon in contact */
 .social-icon {
   width: 16px;
   height: 16px;
@@ -190,8 +209,7 @@
   flex-shrink: 0;
 }
 
-
-/* Architecture */
+/* ===== ARCHITECTURE ===== */
 .arch-desc {
   font-size: 0.95rem;
   color: #4b5563;
@@ -204,52 +222,59 @@
   padding: 30px 24px;
   margin-top: 24px;
   max-width: 650px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+  border: 1px solid #f1f5f9;
 }
 
 .arch-block {
   text-align: left;
+  padding: 12px 14px;
+  background: #f8fafc;
+  border-radius: 8px;
+  border-left: 3px solid #2563eb;
+  margin-bottom: 2px;
 }
 
 .arch-block h4 {
-  margin: 0 0 6px 0;
-  font-size: 1rem;
+  margin: 0 0 4px 0;
+  font-size: 0.95rem;
   color: #111827;
 }
 
 .arch-block p {
   margin: 0;
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   color: #6b7280;
 }
 
 .arch-block ul {
-  margin: 0;
+  margin: 4px 0 0 0;
   padding-left: 18px;
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   color: #4b5563;
 }
 
 .arch-arrow {
   text-align: center;
-  font-size: 1.3rem;
-  color: #9ca3af;
-  margin: 10px 0;
+  font-size: 1.2rem;
+  color: #2563eb;
+  margin: 6px 0;
 }
 
 .badge {
   display: inline-block;
-  background: #eef2ff;
-  color: #3730a3;
-  font-size: 0.7rem;
-  padding: 3px 8px;
+  background: #eff6ff;
+  color: #1d4ed8;
+  font-size: 0.68rem;
+  padding: 2px 8px;
   border-radius: 999px;
   margin-left: 6px;
+  font-weight: 600;
 }
 
-/* copyright centered ONLY */
+/* ===== FOOTER ===== */
 .footer-bottom {
-  margin-top: 40px;
+  margin-top: 60px;
   padding-top: 20px;
   border-top: 1px solid #e5e7eb;
   text-align: center;
@@ -257,21 +282,28 @@
 
 .footer-bottom p {
   font-size: 0.85rem;
-  color: #6b7280;
+  color: #9ca3af;
 }
 
-/* Resume Download */
+/* ===== RESUME LINK IN NAV ===== */
 .resume-link {
-  padding: 6px 12px;
-  border: 1px solid #2563eb;
+  padding: 6px 14px;
+  border: 1.5px solid #2563eb;
   border-radius: 6px;
-  color: #2563eb;
-  font-weight: 500;
+  color: #2563eb !important;
+  font-weight: 600;
   transition: all 0.2s ease;
 }
 
 .resume-link:hover {
   background-color: #2563eb;
-  color: #ffffff;
-  text-decoration: none;
+  color: #ffffff !important;
+  text-decoration: none !important;
+}
+
+/* ===== CERTIFICATIONS ===== */
+.certifications {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
 }

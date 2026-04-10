@@ -1,7 +1,7 @@
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
                Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  background-color: #f9fafb;
+  background-color: #f3f4f6;
   color: #111827;
   line-height: 1.7;
   margin: 0;
@@ -9,14 +9,26 @@ body {
 }
 
 h1 {
-  font-size: 2.2rem;
+  font-size: 2.6rem;
+  font-weight: 800;
   margin-bottom: 0.3rem;
+  letter-spacing: -0.5px;
+  color: #ffffff;
 }
 
 h2 {
   margin-top: 3rem;
   border-bottom: 2px solid #e5e7eb;
   padding-bottom: 0.4rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+h3 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #1f2937;
 }
 
 p {
@@ -36,4 +48,105 @@ a:hover {
 
 ul {
   padding-left: 20px;
+}
+
+/* ===== HERO CTA BUTTONS ===== */
+.hero-cta {
+  display: flex;
+  gap: 12px;
+  margin-top: 24px;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  padding: 11px 24px;
+  background: #2563eb;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: background 0.2s, transform 0.15s;
+  box-shadow: 0 4px 12px rgba(37,99,235,0.3);
+}
+
+.btn-primary:hover {
+  background: #1d4ed8;
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  padding: 11px 24px;
+  border: 2px solid rgba(255,255,255,0.5);
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.2s;
+}
+
+.btn-secondary:hover {
+  background: rgba(255,255,255,0.1);
+  color: #fff;
+  text-decoration: none;
+  border-color: #fff;
+}
+
+.hero-meta {
+  margin-top: 16px;
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.65);
+}
+
+/* ===== SOCIAL PROOF STRIP ===== */
+.proof-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  margin-top: 32px;
+  padding: 20px 24px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.proof-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  min-width: 100px;
+  padding: 8px 12px;
+  text-align: center;
+}
+
+.proof-number {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #111827;
+  line-height: 1.2;
+}
+
+.proof-label {
+  font-size: 0.72rem;
+  color: #6b7280;
+  margin-top: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.proof-divider {
+  width: 1px;
+  background: #e5e7eb;
+  margin: 8px 0;
+  align-self: stretch;
+}
+
+@media (max-width: 600px) {
+  .proof-strip { gap: 8px; }
+  .proof-divider { display: none; }
+  .proof-item { flex: 1 1 40%; }
 }
