@@ -35,3 +35,26 @@ document.addEventListener("DOMContentLoaded", () => {
 
   type();
 });
+
+// ===== SCROLL FADE-IN OBSERVER =====
+const fadeEls = document.querySelectorAll(
+  '.section, .project-card, .exp-card, .skill-group, .arch-node'
+);
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry, i) => {
+    if (entry.isIntersecting) {
+      // stagger delay for arch nodes
+      const delay = entry.target.classList.contains('arch-node') ? i * 80 : 0;
+      setTimeout(() => {
+        entry.target.classList.add('visible');
+      }, delay);
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.12 });
+
+fadeEls.forEach(el => {
+  el.classList.add('fade-up');
+  observer.observe(el);
+});

@@ -150,3 +150,63 @@ ul {
   .proof-divider { display: none; }
   .proof-item { flex: 1 1 40%; }
 }
+
+/* ===== SCROLL FADE-IN ANIMATION ===== */
+.fade-up {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.55s ease, transform 0.55s ease;
+}
+
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== CARD SHINE EFFECT ON HOVER ===== */
+.project-card::before,
+.exp-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255,255,255,0) 0%,
+    rgba(255,255,255,0.18) 50%,
+    rgba(255,255,255,0) 100%
+  );
+  transform: skewX(-20deg);
+  transition: left 0.55s ease;
+  pointer-events: none;
+  border-radius: 14px;
+}
+
+.project-card:hover::before,
+.exp-card:hover::before {
+  left: 125%;
+}
+
+/* ===== PROOF STRIP NUMBER COUNT-UP PULSE ===== */
+.proof-number {
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.proof-item:hover .proof-number {
+  transform: scale(1.15);
+  color: #2563eb;
+}
+
+/* ===== ARCH NODE STAGGER ===== */
+.arch-node {
+  opacity: 0;
+  transform: translateX(-16px);
+  transition: opacity 0.4s ease, transform 0.4s ease, box-shadow 0.2s;
+}
+
+.arch-node.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
