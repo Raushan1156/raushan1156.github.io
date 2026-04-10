@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://raushan1156.github.io/sitemap.xml
