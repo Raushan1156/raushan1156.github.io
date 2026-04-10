@@ -410,3 +410,11 @@
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 20px;
 }
+
+.social-icon {
+  transition: transform 0.2s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+}
